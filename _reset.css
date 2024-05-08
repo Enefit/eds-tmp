@@ -1,0 +1,120 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin and padding
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form styles
+*/
+input,
+textarea,
+select {
+    all: unset;
+    background-clip: border-box;
+    box-sizing: border-box;
+    background-origin: border-box;
+    font: inherit;
+}
+
+/*
+  8. Customize autocomplete background and font color
+*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--background-color-input-filled) inset;
+    box-shadow: 0 0 0 30px var(--background-color-input-filled) inset;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--secondary-500);
+}
+
+/*
+  9. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  10. Remove default list styles
+*/
+ul,
+ol {
+    list-style: none;
+}
+
+/*
+  11. Remove default link styles
+*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+  12. Improve default button styles
+*/
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+/*
+  13. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
