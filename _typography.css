@@ -1,0 +1,38 @@
+html {
+    font-family: var(--font-primary) !important;
+    text-size-adjust: auto;
+    color: var(--secondary-500);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 425px) {
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
